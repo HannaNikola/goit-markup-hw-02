@@ -1,0 +1,118 @@
+
+:root {
+  --primary-text-color:#757575 ;
+  --title-text-color:#212121 ;
+  --accent-text: #2196F3 ;
+  --background-main-color:#F5F5F5;
+  --background-second-color : #F5F4FA;
+  --bacground-accent-color:#2F303A ;
+  --white-color:#FFFFFF ;
+  --background-footer-color:#2F303A;
+  --color-wite-transporet:rgba(255, 255, 255, 0.6);
+}
+
+body {
+ background-color:var(--background-color) ;
+ color: #757575;
+}
+ /* heder  */
+.list {
+    list-style: none;
+}
+/* логотип */
+.logo-accent {
+    color: var(--accent-text);
+}
+.logo {
+  color: var(--title-text-color)  ;
+}
+
+/* навигация  */
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-text);
+}
+.site-nav .link.current {
+    color: var(--accent-text);
+}
+.contact-nav .contacts:hover ,
+.contact-nav .contacts:focus {
+    color:var(--accent-text);
+}
+.contact-nav .contacts.current {
+    color: var(--primary-text-color);
+}
+   
+
+/* hero */
+.hero {
+    background: var(--bacground-accent-color); 
+    
+}
+.hero .hero-title {
+    color: var(--white-color);
+}
+.buttons-hero {
+    color: var(--white-color);
+    background-color: var(--accent-text);
+}
+ .buttons-hero:hover,
+ .buttons-hero:focus {
+    background-color: var(--background-second-color);
+ }
+ /* about section */
+.section .section-title {
+    color: var(--title-text-color);
+}
+.feature .title { 
+  color:var(--title-text-color) ;   
+}
+ 
+/* employee list */
+.employees .coworcer  {
+    color: var(--title-text-color);
+}
+
+
+/* footer */
+.footer {
+    background-color:var(--background-footer-color) ;
+}
+.logo-accent {
+    color: var(--accent-text);
+}
+ .logo-foot {
+        color: var(--white-color);
+    }
+.adress-foot .adress {
+    color: var(--white-color);
+}
+ .adress-foot .item {
+    color: var(--color-wite-transporet);
+ }
+.adress-foot .adress:hover ,
+.adress-foot .adress:focus {
+    color: var(--accent-text);
+}
+
+/* portfolio navigations  */
+.buttons {
+ background-color:var(--background-second-color) ;
+ color: var(--title-text-color);
+}
+.buttons:hover ,
+.buttons:focus{
+background-color: var(--accent-text);
+
+}
+
+/* portfolio prodject */
+.title-project {
+    color: var(--title-text-color);
+}
+.work {
+    color: var(--primary-text-color);
+}
