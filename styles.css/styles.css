@@ -10,10 +10,15 @@
   --background-footer-color:#2F303A;
   --color-wite-transporet:rgba(255, 255, 255, 0.6);
 }
-
+/* font-family: 'Roboto',
+sans-serif;
+font-family: 'Roboto Condensed',
+sans-serif; шрифты */
 body {
  background-color:var(--background-color) ;
- color: #757575;
+ color: var(--primary-text-color);
+ font-family: Roboto, sans-serif;
+ letter-spacing: 0.03em;
 }
  /* heder  */
 .list {
@@ -26,10 +31,20 @@ body {
 .logo {
   color: var(--title-text-color)  ;
 }
-
+.logo-accent {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight:700;
+    line-height:1.19 ;
+}
 /* навигация  */
-.site-nav .link {
+ .site-nav .link {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -37,15 +52,24 @@ body {
 }
 .site-nav .link.current {
     color: var(--accent-text);
+    }
+   
+    /* contact-nav */
+.contact-nav .contacts {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
-.contact-nav .contacts:hover ,
+
+.contact-nav .contacts:hover,
 .contact-nav .contacts:focus {
-    color:var(--accent-text);
+    color: var(--accent-text);
 }
 .contact-nav .contacts.current {
-    color: var(--primary-text-color);
+    color:var(--accent-text);
 }
-   
 
 /* hero */
 .hero {
@@ -54,7 +78,13 @@ body {
 }
 .hero .hero-title {
     color: var(--white-color);
-}
+    font-weight: 900;
+    font-size: 44px;
+    line-height:1.4em;
+    letter-spacing: 0.06em;
+    text-align: center;
+    }
+
 .buttons-hero {
     color: var(--white-color);
     background-color: var(--accent-text);
@@ -66,15 +96,35 @@ body {
  /* about section */
 .section .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2em;
+    text-align: center;
 }
 .feature .title { 
-  color:var(--title-text-color) ;   
+  color:var(--title-text-color) ; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.feature .text-feature {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7em;
 }
  
 /* employee list */
 .employees .coworcer  {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2em;
 }
+  .coworcer .work {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2em;
+  }
 
 
 /* footer */
@@ -112,7 +162,14 @@ background-color: var(--accent-text);
 /* portfolio prodject */
 .title-project {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
 }
 .work {
+    font-weight: 400;
     color: var(--primary-text-color);
+    font-size: 18px;
+    line-height: 1.8em;
 }
