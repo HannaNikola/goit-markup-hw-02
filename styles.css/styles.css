@@ -44,7 +44,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    
+    text-decoration:none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -61,6 +61,7 @@ body {
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .contact-nav .contacts:hover,
@@ -80,7 +81,7 @@ body {
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
-    line-height:1.4em;
+    line-height:1.4;
     letter-spacing: 0.06em;
     text-align: center;
     }
@@ -88,6 +89,10 @@ body {
 .buttons-hero {
     color: var(--white-color);
     background-color: var(--accent-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
 }
  .buttons-hero:hover,
  .buttons-hero:focus {
@@ -98,19 +103,19 @@ body {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.2em;
+    line-height: 1.2;
     text-align: center;
 }
 .feature .title { 
   color:var(--title-text-color) ; 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.2em;
+    line-height: 1.2;
 }
 .feature .text-feature {
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.7em;
+    line-height: 1.7;
 }
  
 /* employee list */
@@ -118,12 +123,12 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2em;
+    line-height: 1.2;
 }
   .coworcer .work {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.2;
   }
 
 
@@ -152,10 +157,16 @@ body {
 .buttons {
  background-color:var(--background-second-color) ;
  color: var(--title-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
 }
 .buttons:hover ,
 .buttons:focus{
 background-color: var(--accent-text);
+.pointed {cursor: pointer;
+
+}
 
 }
 
@@ -164,12 +175,15 @@ background-color: var(--accent-text);
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 2em;
+    line-height: 2;
     letter-spacing: 0.06em;
+    
+    
 }
 .work {
     font-weight: 400;
     color: var(--primary-text-color);
     font-size: 18px;
-    line-height: 1.8em;
+    line-height: 1.8;
+    
 }
