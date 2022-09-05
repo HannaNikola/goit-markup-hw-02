@@ -10,10 +10,7 @@
   --background-footer-color:#2F303A;
   --color-wite-transporet:rgba(255, 255, 255, 0.6);
 }
-/* font-family: 'Roboto',
-sans-serif;
-font-family: 'Roboto Condensed',
-sans-serif; шрифты */
+
 body {
  background-color:var(--background-color) ;
  color: var(--primary-text-color);
@@ -163,27 +160,18 @@ line-height: 1.6;
 }
 .buttons:hover ,
 .buttons:focus{
-background-color: var(--accent-text);
-.pointed {cursor: pointer;
+background-color: var(--accent-text);}
 
-}
-
-}
-
-/* portfolio prodject */
+/* portfolio prodjekt */ 
 .title-project {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
-    
-    
-}
+    letter-spacing: 0.06em }
 .work {
     font-weight: 400;
     color: var(--primary-text-color);
     font-size: 18px;
-    line-height: 1.8;
+    line-height: 1.8;}
     
-}
