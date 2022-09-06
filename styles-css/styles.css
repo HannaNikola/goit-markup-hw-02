@@ -3,6 +3,7 @@
   --primary-text-color:#757575 ;
   --title-text-color:#212121 ;
   --accent-text: #2196F3 ;
+  --accent-battons-hover:#188CE8;
   --background-main-color:#F5F5F5;
   --background-second-color : #F5F4FA;
   --bacground-accent-color:#2F303A ;
@@ -16,6 +17,22 @@ body {
  color: var(--primary-text-color);
  font-family: Roboto, sans-serif;
  letter-spacing: 0.03em;
+}
+a{
+    text-decoration: none;
+}
+/* hide */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
  /* heder  */
 .list {
@@ -33,6 +50,8 @@ body {
     font-size: 26px;
     font-weight:700;
     line-height:1.19 ;
+    text-decoration: none;
+    
 }
 /* навигация  */
  .site-nav .link {
@@ -81,19 +100,22 @@ body {
     line-height:1.4;
     letter-spacing: 0.06em;
     text-align: center;
+    text-transform: uppercase;
     }
 
 .buttons-hero {
     color: var(--white-color);
     background-color: var(--accent-text);
+    font-family: Roboto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
  .buttons-hero:hover,
  .buttons-hero:focus {
-    background-color: var(--background-second-color);
+    background-color: var(--accent-battons-hover);
  }
  /* about section */
 .section .section-title {
@@ -102,12 +124,14 @@ body {
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    
 }
 .feature .title { 
   color:var(--title-text-color) ; 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
+    text-transform: uppercase;
 }
 .feature .text-feature {
     font-weight: 400;
@@ -130,6 +154,7 @@ body {
 
 
 /* footer */
+
 .footer {
     background-color:var(--background-footer-color) ;
 }
@@ -141,6 +166,9 @@ body {
     }
 .adress-foot .adress {
     color: var(--white-color);
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
 }
  .adress-foot .item {
     color: var(--color-wite-transporet);
@@ -154,13 +182,17 @@ body {
 .buttons {
  background-color:var(--background-second-color) ;
  color: var(--title-text-color);
+ font-family: Roboto;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.6;
+font-family: Roboto;
+cursor: pointer;
 }
 .buttons:hover ,
 .buttons:focus{
-background-color: var(--accent-text);}
+background-color: var(--accent-text);
+color: var(--white-color);}
 
 /* portfolio prodjekt */ 
 .title-project {
@@ -172,6 +204,6 @@ background-color: var(--accent-text);}
 .work {
     font-weight: 400;
     color: var(--primary-text-color);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;}
     
