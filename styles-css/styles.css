@@ -140,6 +140,9 @@ a{
 }
  
 /* employee list */
+.section .employees {
+    background-color: var(--background-second-color);
+}
 .employees .coworcer  {
     color: var(--title-text-color);
     font-weight: 500;
