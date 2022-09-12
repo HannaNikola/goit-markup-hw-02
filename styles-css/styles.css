@@ -52,6 +52,9 @@ a{
     list-style: none;
 }
  /* heder  */
+ .main-container{
+    border-bottom:  1px solid #ECECEC;
+ }
  
  .page-header {
     background-color: var(--color-wite-transporet);
