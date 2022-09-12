@@ -27,10 +27,7 @@ body {
 a{
     text-decoration: none;
 }
-.main-container {
-    
-    outline:2px solid tomato;
-}
+
 .conteiner {
     width: 1200px;
     margin: 0 auto;
@@ -58,7 +55,6 @@ a{
  
  .page-header {
     background-color: var(--color-wite-transporet);
-    border-bottom: #ECECEC ;
  }
 
 /* логотип */
@@ -127,23 +123,19 @@ a{
     /* contact-nav */
 .contact-nav {
     display: flex;
-    margin-left: auto;
-    
-
+    margin-left: 344px;
+    }
+  .contact-wrap:first-of-type { 
+    margin-right: 50px;
 }
- .contact-nav .contact-wrap + .contact-wrap {
-    margin-left: 50;
-    margin-right: 0;
-}
-
- .contact-naw .contacts {
+ 
+.contact-wrap .contacts {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     margin-right: 0px;
-    
 
-    color: var(--primary-text-color);
+    color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -206,7 +198,7 @@ a{
  .buttons-hero:hover,
  .buttons-hero:focus {
     background-color: var(--accent-battons-hover);
-    border: 1px solid transparent;
+    border: 1px solid transparent
  }
 
  /* about section */
