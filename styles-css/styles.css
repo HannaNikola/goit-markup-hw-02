@@ -28,11 +28,15 @@ a{
     text-decoration: none;
 }
 .main-container {
+    
+    outline:2px solid tomato;
+}
+.conteiner {
     width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right:  15px;
-    outline:2px solid tomato;
+    padding-right: 15px;
+
 }
 /* hide */
 .visually-hidden {
@@ -47,9 +51,18 @@ a{
     clip-path: inset(50%);
     margin: -1px;
 }
- /* heder  */
 .list {
     list-style: none;
+}
+ /* heder  */
+ 
+ .page-header {
+    background-color: var(--color-wite-transporet);
+ }
+
+.main-container{
+padding-bottom: 40px;
+
 }
 /* логотип */
 .logo-accent {
@@ -59,22 +72,44 @@ a{
   color: var(--title-text-color)  ;
 }
 .logo-accent {
+    margin-right: 93px;
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight:700;
     line-height:1.19 ;
     text-decoration: none;
+
     
 }
+/* main naw */
+ .naw-link {
+    display: flex;
+    align-items: center;
+}
 /* навигация  */
+
+.site-nav {
+    display: flex;
+}
+.site-nav .item {
+    margin-right: 50px;
+}
+.site-nav .item:last-child {
+    margin-right: 0;
+}
  .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration:none;
-    padding-bottom: 40px;
+    
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -85,14 +120,31 @@ a{
     }
    
     /* contact-nav */
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+    
+
+}
+ .contact-nav .contact-wrap + .contact-wrap {
+    margin-left: 50;
+    margin-right: 0;
+}
+
 .contact-nav .contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 0px;
+    
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-bottom: 40px;
+    
 }
 
 .contact-nav .contacts:hover,
@@ -107,9 +159,19 @@ a{
 .hero {
     background: var(--bacground-accent-color)  ;
     outline: 2px solid tomato; 
-    
+    margin: auto;
 }
-.hero .hero-title {
+.conteiner-hero {
+    padding-top: 200px;
+    padding-left: 252px;
+    padding-right: 252px;
+    padding-bottom: 200px;
+    
+   }
+    .hero .hero-title {
+    margin-bottom: 30px;
+    width: 696px;
+
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -117,7 +179,6 @@ a{
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
     outline: 2px solid tomato;
     }
 
@@ -134,28 +195,35 @@ a{
     padding: 10px 32px;
     min-width: 216px;
     border: 1px solid transparent;
-    
-
-}
+    text-align: center;
+    }
  .buttons-hero:hover,
  .buttons-hero:focus {
     background-color: var(--accent-battons-hover);
+    border: 1px solid transparent
  }
  /* about section */
- .container-about{
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid tomato;
+ .feature{
+    display: flex;
  }
+ .feauter-item{
+    flex-basis: calc((100%-90)/4);
+    }
+    
+ .container-about{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px solid tomato;
+    
+ }
+
 .section .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     
 }
 .feature .title { 
@@ -165,32 +233,54 @@ a{
     line-height: 1.2;
     text-transform: uppercase;
     padding-bottom: 10px;
+
     
 }
 .feature .text-feature {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    width: 270px; 
+    display: block;
     
 }
 /* about-prodgect */
+
+.prodgect-list{
+    display: flex;
+}
+.prodgect-item{
+    flex-basis: calc((100%-60px)/3);
+    }
+     .img-item {
+        display: block;
+    }
 .container-prodgect{
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
     outline: 2px solid tomato;
+    padding-bottom: 94px;
 }
- 
+
+   
 /* employee list */
-.container-emploees {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 2px solid tomato;
-    background-color: var(--background-second-color);
+.employees {
+    display: flex;
 }
+.item-employees {
+    display: block;
+}
+.employees-item{
+    flex-basis: calc((100%-90)/4);
+}
+.section .employees {
+background-color: var(--background-second-color);
+}
+.container-emploees {
+    outline: 2px solid tomato;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    }
+
 
 .employees .coworcer  {
     color: var(--title-text-color);
@@ -208,16 +298,22 @@ a{
 
 
 /* footer */
+.conteiner-foot {
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-bottom: 60px;
+}
 
 .footer {
     background-color:var(--background-footer-color) ;
 }
 .logo-accent {
     color: var(--accent-text);
+    margin-bottom: 20px;
 }
  .logo-foot {
         color: var(--white-color);
-    }
+        }
 .adress-foot .adress {
     color: var(--white-color);
     font-style: normal;
@@ -234,30 +330,47 @@ a{
 
 /* portfolio navigations  */
 .conteiner-portfolio {
-    width: 1200px;
-     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
     outline: 2px solid tomato;
 }
-.buttons {
- background-color:var(--background-second-color) ;
- color: var(--title-text-color);
- font-family: Roboto;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-font-family: Roboto;
-cursor: pointer;
-
-
+.filter {
+    display: flex;
 }
-.buttons:hover ,
+.buttons {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 103px;
+    border: 1px solid transparent;
+    margin-bottom: 34px;
+    margin-left: 8px;
+    
+
+   background-color:var(--background-second-color) ;
+   color: var(--title-text-color);
+   font-family: Roboto;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.6;
+   font-family: Roboto;
+   
+}
+
+
+.buttons:hover,
 .buttons:focus{
 background-color: var(--accent-text);
+border:1px solid transparent ;
 color: var(--white-color);}
 
 /* portfolio prodjekt */ 
+.project{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .title-project {
     color: var(--title-text-color);
     font-weight: 700;
