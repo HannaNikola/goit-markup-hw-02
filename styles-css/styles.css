@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5 ,h6, ul, p {
     margin:0;
 }
 ul{
-    padding: left 0; 
+    padding-left: 0; 
     margin: 0;
 }
 body {
@@ -58,12 +58,9 @@ a{
  
  .page-header {
     background-color: var(--color-wite-transporet);
+    border-bottom: #ECECEC ;
  }
 
-.main-container{
-padding-bottom: 40px;
-
-}
 /* логотип */
 .logo-accent {
     color: var(--accent-text);
@@ -73,12 +70,16 @@ padding-bottom: 40px;
 }
 .logo-accent {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-left: 0;
+    margin-bottom: 25px;
     display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight:700;
     line-height:1.19 ;
     text-decoration: none;
+    Width: 145px;
 
     
 }
@@ -88,6 +89,10 @@ padding-bottom: 40px;
     align-items: center;
 }
 /* навигация  */
+.naw-content{
+    display: flex;
+    align-items: center;
+}
 
 .site-nav {
     display: flex;
@@ -131,7 +136,7 @@ padding-bottom: 40px;
     margin-right: 0;
 }
 
-.contact-nav .contacts {
+ .contact-naw .contacts {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -158,16 +163,16 @@ padding-bottom: 40px;
 /* hero */
 .hero {
     background: var(--bacground-accent-color)  ;
-    outline: 2px solid tomato; 
     margin: auto;
+    text-align: center;
 }
 .conteiner-hero {
     padding-top: 200px;
     padding-left: 252px;
     padding-right: 252px;
     padding-bottom: 200px;
-    
-   }
+    }
+
     .hero .hero-title {
     margin-bottom: 30px;
     width: 696px;
@@ -179,8 +184,7 @@ padding-bottom: 40px;
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    outline: 2px solid tomato;
-    }
+     }
 
 .buttons-hero {
     color: var(--white-color);
@@ -190,6 +194,7 @@ padding-bottom: 40px;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 32px;
@@ -197,24 +202,28 @@ padding-bottom: 40px;
     border: 1px solid transparent;
     text-align: center;
     }
+
  .buttons-hero:hover,
  .buttons-hero:focus {
     background-color: var(--accent-battons-hover);
     border: 1px solid transparent
  }
+
  /* about section */
  .feature{
     display: flex;
  }
  .feauter-item{
-    flex-basis: calc((100%-90)/4);
-    }
+    flex-basis: calc(100% / 4);
+    margin-left: 30px;
+}
+ .feauter-item:first-of-type{
+    margin-left: 0;
+ }
     
  .container-about{
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 2px solid tomato;
-    
  }
 
 .section .section-title {
@@ -249,11 +258,13 @@ padding-bottom: 40px;
 .prodgect-list{
     display: flex;
 }
-.prodgect-item{
-    flex-basis: calc((100%-60px)/3);
+
+.prodgect-item {
+    flex-basis: calc(100% / 3);
     }
-     .img-item {
-        display: block;
+    
+.img-item {
+    display: block;
     }
 .container-prodgect{
     outline: 2px solid tomato;
@@ -268,8 +279,9 @@ padding-bottom: 40px;
 .item-employees {
     display: block;
 }
-.employees-item{
-    flex-basis: calc((100%-90)/4);
+.item-employees {
+    flex-basis: calc((100%- 90)/4);
+    margin-bottom: 30px;
 }
 .section .employees {
 background-color: var(--background-second-color);
@@ -307,7 +319,7 @@ background-color: var(--background-second-color);
 .footer {
     background-color:var(--background-footer-color) ;
 }
-.logo-accent {
+.foot-accent {
     color: var(--accent-text);
     margin-bottom: 20px;
 }
@@ -332,11 +344,11 @@ background-color: var(--background-second-color);
 .conteiner-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    
-    outline: 2px solid tomato;
+
 }
 .filter {
     display: flex;
+    justify-content: center;
 }
 .buttons {
     cursor: pointer;
@@ -366,11 +378,28 @@ border:1px solid transparent ;
 color: var(--white-color);}
 
 /* portfolio prodjekt */ 
+
 .project{
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+ .project >.item-work {
+    flex-basis: calc(100%/3- 15px);
+    margin-left: 15px;
+    margin-top: 15px;
+ }
+ .img-work{
+    margin-bottom: 20px;
+ }
+.item-work{
+border-bottom: 1px solid #EEEEEE
+}
 .title-project {
     color: var(--title-text-color);
     font-weight: 700;
